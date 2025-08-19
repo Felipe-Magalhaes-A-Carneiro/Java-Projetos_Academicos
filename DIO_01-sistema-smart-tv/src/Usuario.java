@@ -31,5 +31,9 @@ public class Usuario {
         smartTv.diminuirVolume();
         System.out.println("Novo Status: Qual é o volume? " + 
         smartTv.volume);
+
+        // -----
+        // Mudando o canal:
+        smartTv.mudarCanal(4);
     }
 }

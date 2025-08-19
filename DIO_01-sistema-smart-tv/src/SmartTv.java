@@ -4,9 +4,7 @@ public class SmartTv {
     int canal = 1;
     int volume = 25;
 
-    // ----------
     // CRIAÇÃO DE MÉTODOS
-    
     // Método para ligar a TV:
     // O método não recebe nenhum parâmetro e não retorna nada (void):
     
@@ -39,6 +37,16 @@ public class SmartTv {
             volume--;
         } else {
             System.out.println("Volume já está no mínimo!");
+        }
+    }
+    // ---------- aumetando a complexidade:
+    
+    // Método para mudar o canal (aumentar e diminuir):
+    public void mudarCanal(int novoCanal) {
+        if (novoCanal > 0) {
+            System.out.println("Novo Status: " + novoCanal + " é o novo canal.");
+        } else {
+            System.out.println("Canal inválido! O canal deve ser maior que 0.");
         }
     }
 }
